@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+html {
+    font-size: 22px;
+}
+body {
+    padding: 1rem;
+}
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
+  width: 100%;
+
+}
+.cards {
+  max-width: 90%;
+  margin: 0 auto; /* center */
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* media queries */
+
+/* tablets */ 
+@media only screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+  }
+}
+
+/* laptop/ desktop */ 
+@media only screen and (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="cards">
+    <div class="card">ONE</div>
+    <div class="card">TWO</div>
+    <div class="card">THREE</div>
+    <div class="card">FOUR</div>
+    <div class="card">FIVE</div>
+    <div class="card">SIX</div>
+    <div class="card">SEVEN</div>
+    <div class="card">EIGHT</div>
+    <div class="card">NINE</div>
+    <div class="card">TEN</div>
+    <div class="card">ELEVEN</div>
+    <div class="card">TWELVE</div>
+</div>
+
+
+</body>
+</html>
